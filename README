@@ -5,6 +5,8 @@
 This is a quick BLE sample to drive Awox Aroma Light Smart Led via BLE-enabled device.
 It does not claim to be clean code but provide a start to get use to BLE API.
 
+Project can be opened with Android-Studio.
+
 It does compile for current Miami Box which are 4.2.2 but I compiled it with lvl 21 Android compiled SDK and it went fine.
 
 Current app enables you to scan only Awox Aroma Light Smart Led device, you can connect to it and set ON/OFF toggle button.
