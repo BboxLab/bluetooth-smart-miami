@@ -15,3 +15,6 @@ _ this sample doesn't manage timing between connection/deconnection, you should 
 _ sometimes Bluetooth get faulty on device (even my own Samsung Galaxy S4 in Android 4.4), in some rarely cases you won't see bluetooth services you need to connect to. Switching Bluetooth ON & OFF seems to solve this problem 
 _ this sample doesn't manage more than one device, if you want to connect to multiple devices at a time, you'll have to make your own way
 
+Tested on :
+_ Miami Box 4.2.2 Version Firmware 1.01.058.2
+_ Samsung Galaxy S4 GT-I9505
