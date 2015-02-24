@@ -1,0 +1,17 @@
+/****************************************************\
+/******* ANDROID BLUETOOTH SMART SAMPLE APP**********\
+/****************************************************\
+
+This is a quick BLE sample to drive Awox Aroma Light Smart Led via BLE-enabled device.
+It does not claim to be clean code but provide a start to get use to BLE API.
+
+It does compile for current Miami Box which are 4.2.2 but I compiled it with lvl 21 Android compiled SDK and it went fine.
+
+Current app enables you to scan only Awox Aroma Light Smart Led device, you can connect to it and set ON/OFF toggle button.
+
+Be careful :
+_ this sample doesn't manage timing between callback. In theory, you have to wait for a onCharacteristicRead() when you read and onCharacteristicWrite() when you write to a characteristic
+_ this sample doesn't manage timing between connection/deconnection, you should wait for a onConnectionStateChanged() for a disconnection before reconnecting to the same device
+_ sometimes Bluetooth get faulty on device (even my own Samsung Galaxy S4 in Android 4.4), in some rarely cases you won't see bluetooth services you need to connect to. Switching Bluetooth ON & OFF seems to solve this problem 
+_ this sample doesn't manage more than one device, if you want to connect to multiple devices at a time, you'll have to make your own way
+
