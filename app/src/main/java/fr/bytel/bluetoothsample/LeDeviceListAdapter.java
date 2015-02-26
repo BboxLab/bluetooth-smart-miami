@@ -50,18 +50,19 @@ public class LeDeviceListAdapter extends BaseAdapter {
             Log.i(this.getClass().getName(), "Device with address : " + device.getAddress());
 
             //filter only Awox Aroma Light
-            if (device.getName().equals("AL-Bc7"))
-            {
-                this.main_view.getListViewAdapter().add(device);
+            if (device.getName()!=null) {
+                if (device.getName().equals("AL-Bc7")) {
+                    this.main_view.getListViewAdapter().add(device);
 
-                this.main_view.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        LeDeviceListAdapter.this.main_view.getListViewAdapter().notifyDataSetChanged();
-                    }
-                });
+                    this.main_view.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            LeDeviceListAdapter.this.main_view.getListViewAdapter().notifyDataSetChanged();
+                        }
+                    });
 
-                mLeDevices.add(device);
+                    mLeDevices.add(device);
+                }
             }
         }
     }
